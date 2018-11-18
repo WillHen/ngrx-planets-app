@@ -20,7 +20,6 @@ export class PlanetEffects {
             );
         })
     );
-    // catch(() => of(new FoodActions.FetchFoodFail())
 
     constructor(
         private actions$: Actions,
