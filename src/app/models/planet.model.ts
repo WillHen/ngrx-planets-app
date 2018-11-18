@@ -12,16 +12,15 @@ export class Planet {
 	url: string;
 
 	constructor() {
-		this.climate =''
-		this.diameter = ''
-		this.gravity = ''
-		this.name = ''
-		this.orbital_period = ''
-		this.population = ''
-		this.rotation_period = ''
-		this.surface_water = ''
-		this.terrain = ''
-		this.url = ''
-
+		this.climate = "";
+		this.diameter = "";
+		this.gravity = "";
+		this.name = "";
+		this.orbital_period = "";
+		this.population = "";
+		this.rotation_period = "";
+		this.surface_water = "";
+		this.terrain = "";
+		this.url = "";
 	}
 }

@@ -13,11 +13,11 @@ export class PlanetEffects {
 	fetchPlanets$: Observable<Action> = this.actions$.pipe(
 		ofType(PlanetActions.FETCH_PLANETS),
 		switchMap(query => {
-			return this._planetsService
-				.getPlanets()
-				.pipe(
-					map(planets =>  { return new PlanetActions.FetchPlanetsDone(planets) })
-				);
+			return this._planetsService.getPlanets().pipe(
+				map(planets => {
+					return new PlanetActions.FetchPlanetsDone(planets);
+				})
+			);
 		})
 	);
 	// catch(() => of(new FoodActions.FetchFoodFail())
