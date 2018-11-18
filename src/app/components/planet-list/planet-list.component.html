@@ -1,0 +1,7 @@
+<div>
+	<div  *ngIf="($planetListState | async).length">
+		<div *ngFor='let planet of $planetListState | async'>
+			{{planet.name}}
+		</div>
+	</div>
+</div>
